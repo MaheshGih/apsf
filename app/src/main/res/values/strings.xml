@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">RPS</string>
+    <string name="text_register">Submit</string>
+    <string name="text_references">References</string>
+
+    <string name="text_mandatory">* symbol indicate fields are mandatory</string>
+
+    <string name="text_contact1">Contact : RPS ORGANIZING TEAM</string>
+    <string name="text_email">Office Email : rpsorg2019@gmail.com</string>
+    <string name="text_tech_mail">Technical Email : rpsorg2019@gmail.com</string>
+    <string name="text_phone">Phone : +91-XXXXXXXXXX</string>
+    <string name="text_address">Jadagam Vari Street, Suryarao Pet, Vijayawada-520002, AP</string>
+    <string name="text_address_link">https://goo.gl/maps/vQBUGfPYk4v</string>
+
+    <string name="no_network">Network Problem \nCheck Internet Connection</string>
+    <string name="text_offline">Not available in Offline</string>
+
+    <string name="text_site">http://www.v2softwaresolutions.com/</string>
+    <string name="design_develop">Powered by V2 Software Solutions, Guntur 9494678351</string>
+
+</resources>

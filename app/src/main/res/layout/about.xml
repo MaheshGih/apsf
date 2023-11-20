@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpw15">
+
+                <include layout="@layout/header" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_card"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dpw20"
+                    android:paddingRight="@dimen/dpw20">
+
+                    <com.v2soft.apsf.shared.Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/dpw3"
+                        android:text="About Us"
+                        android:textColor="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_footer"
+        android:layout_below="@+id/ll_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dpw80"
+                android:layout_height="@dimen/dpw80"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dpw10"
+                android:src="@drawable/network"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dpw10"
+                android:paddingLeft="@dimen/dpw20"
+                android:paddingRight="@dimen/dpw20"
+                android:paddingTop="@dimen/dpw10">
+
+                <com.v2soft.apsf.shared.Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_18" />
+
+                <com.v2soft.apsf.shared.Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="description here..."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_12" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.v2soft.apsf.shared.Regular
+        android:id="@+id/tv_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dpw3"
+        android:text="@string/design_develop"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_12" />
+
+</RelativeLayout>

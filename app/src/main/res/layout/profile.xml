@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_footer"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dpw70"
+                android:background="@color/colorPrimary"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dpw80"
+                    android:layout_height="@dimen/dpw80"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/dpw20"
+                    android:background="@drawable/management" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/dpw10"
+                    android:paddingRight="@dimen/dpw10">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="@dimen/dpw4"
+                        app:cardElevation="@dimen/dpw4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/dpw3"
+                            android:gravity="bottom"
+                            android:orientation="vertical">
+
+                            <com.v2soft.apsf.shared.Bold
+                                android:id="@+id/name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dpw5"
+                                android:gravity="center_horizontal"
+                                android:text="Veera"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="@dimen/textsize_18" />
+
+                            <com.v2soft.apsf.shared.Bold
+                                android:id="@+id/email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Email : batthulaveera@gmail.com"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="@dimen/textsize_14" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.v2soft.apsf.shared.Bold
+                                    android:id="@+id/refid"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:text="Ref Id : 9494678351"
+                                    android:textColor="@color/textColorSecondary"
+                                    android:textSize="@dimen/textsize_14" />
+
+                                <com.v2soft.apsf.shared.Bold
+                                    android:id="@+id/mobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:text="Phone Number : 9494678351"
+                                    android:textColor="@color/textColorSecondary"
+                                    android:textSize="@dimen/textsize_14" />
+
+                                <com.v2soft.apsf.shared.Bold
+                                    android:id="@+id/regid"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:text="Reg Id : 9494678351"
+                                    android:textColor="@color/textColorSecondary"
+                                    android:textSize="@dimen/textsize_14" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transperant">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:onClick="closeScreen"
+                        android:padding="@dimen/dpw10">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_arrow_back_white_24dp" />
+
+                    </LinearLayout>
+
+                    <com.v2soft.apsf.shared.Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_20" />
+
+                    <com.v2soft.apsf.shared.Regular
+                        android:id="@+id/tv_skip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dpw10"
+                        android:text="Skip"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_20"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <com.v2soft.apsf.shared.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="@dimen/dpw80"
+                    android:layout_height="@dimen/dpw80"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/avathar"
+                    app:border_color="@color/white"
+                    app:border_width="@dimen/dpw2" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            android:padding="@dimen/dpw5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.v2soft.apsf.shared.Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dpw32"
+                    android:background="@drawable/ripple_button"
+                    android:gravity="center"
+                    android:onClick="onEdit"
+                    android:paddingLeft="@dimen/dpw20"
+                    android:paddingRight="@dimen/dpw20"
+                    android:text="Edit Profile"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_18"
+                    android:visibility="gone" />
+
+                <com.v2soft.apsf.shared.Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dpw32"
+                    android:layout_marginLeft="@dimen/dpw5"
+                    android:background="@drawable/ripple_button"
+                    android:gravity="center"
+                    android:onClick="onPassword"
+                    android:paddingLeft="@dimen/dpw20"
+                    android:paddingRight="@dimen/dpw20"
+                    android:text="Change Password"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_18"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dpw5">
+
+                <LinearLayout
+                    android:id="@+id/ll_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dpw10"
+                    android:layout_marginRight="@dimen/dpw10"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:hint="Enter your Name"
+                            android:inputType="textCapSentences"
+                            android:padding="@dimen/dpw5"
+                            android:singleLine="true"
+                            android:tag="Name"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5">
+
+                        <EditText
+                            android:id="@+id/surname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:hint="Enter your SurName"
+                            android:inputType="textCapSentences"
+                            android:padding="@dimen/dpw5"
+                            android:singleLine="true"
+                            android:tag="Surname"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5">
+
+                        <EditText
+                            android:id="@+id/dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:hint="Date of Birth"
+                            android:inputType="none"
+                            android:padding="@dimen/dpw5"
+                            android:singleLine="true"
+                            android:tag="Date of Birth"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5">
+
+                        <EditText
+                            android:id="@+id/et_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:hint="Mobile Number"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:padding="@dimen/dpw5"
+                            android:singleLine="true"
+                            android:tag="Mobile Number"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.v2soft.apsf.shared.Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:textSize="@dimen/textsize_16" />
+
+                        <RadioGroup
+                            android:id="@+id/gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorPrimary"
+                                android:checked="true"
+                                android:tag="Male"
+                                android:text="Male"
+                                android:textColor="@color/textColorSecondary"
+                                android:textColorHint="@color/textColorSecondary"
+                                android:textSize="@dimen/textsize_16" />
+
+                            <RadioButton
+                                android:id="@+id/female"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorPrimary"
+                                android:tag="Female"
+                                android:text="Female"
+                                android:textColor="@color/textColorSecondary"
+                                android:textColorHint="@color/textColorSecondary"
+                                android:textSize="@dimen/textsize_16" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/subcaste"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:drawableRight="@drawable/ic_arrow_down_24dp"
+                            android:hint="Sub Caste"
+                            android:inputType="textCapSentences|textNoSuggestions"
+                            android:padding="@dimen/dpw5"
+                            android:singleLine="true"
+                            android:tag="Sub Caste"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/qualification"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:drawableRight="@drawable/ic_arrow_down_24dp"
+                            android:hint="Qualification"
+                            android:inputType="textCapSentences"
+                            android:padding="@dimen/dpw5"
+                            android:singleLine="true"
+                            android:tag="Qualification"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/profession"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:drawableRight="@drawable/ic_arrow_down_24dp"
+                            android:hint="Profession"
+                            android:inputType="textCapSentences"
+                            android:padding="@dimen/dpw5"
+                            android:singleLine="true"
+                            android:tag="Profession"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/department"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:drawableRight="@drawable/ic_arrow_down_24dp"
+                            android:hint="Department"
+                            android:inputType="textCapSentences"
+                            android:padding="@dimen/dpw5"
+                            android:singleLine="true"
+                            android:tag="Department"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/bloodgroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:drawableRight="@drawable/ic_arrow_down_24dp"
+                            android:hint="Blood Group"
+                            android:inputType="textCapSentences"
+                            android:padding="@dimen/dpw5"
+                            android:singleLine="true"
+                            android:tag="Blood Group"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.v2soft.apsf.shared.Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Are you interested to donate blood?"
+                            android:textSize="@dimen/textsize_16" />
+
+                        <RadioGroup
+                            android:id="@+id/donate_blood"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/blood_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorPrimary"
+                                android:tag="Yes"
+                                android:text="Yes"
+                                android:textColor="@color/textColorSecondary"
+                                android:textColorHint="@color/textColorSecondary"
+                                android:textSize="@dimen/textsize_16" />
+
+                            <RadioButton
+                                android:id="@+id/blood_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorPrimary"
+                                android:checked="true"
+                                android:tag="No"
+                                android:text="No"
+                                android:textColor="@color/textColorSecondary"
+                                android:textColorHint="@color/textColorSecondary"
+                                android:textSize="@dimen/textsize_16" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.v2soft.apsf.shared.Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Are you interested to share details?"
+                            android:textSize="@dimen/textsize_16" />
+
+                        <RadioGroup
+                            android:id="@+id/share_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/details_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorPrimary"
+                                android:tag="Yes"
+                                android:text="Yes"
+                                android:textColor="@color/textColorSecondary"
+                                android:textColorHint="@color/textColorSecondary"
+                                android:textSize="@dimen/textsize_16" />
+
+                            <RadioButton
+                                android:id="@+id/details_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorPrimary"
+                                android:checked="true"
+                                android:tag="No"
+                                android:text="No"
+                                android:textColor="@color/textColorSecondary"
+                                android:textColorHint="@color/textColorSecondary"
+                                android:textSize="@dimen/textsize_16" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.v2soft.apsf.shared.Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Are you a NRI?"
+                            android:textSize="@dimen/textsize_16" />
+
+                        <RadioGroup
+                            android:id="@+id/nri"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/nri_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorPrimary"
+                                android:tag="Yes"
+                                android:text="Yes"
+                                android:textColor="@color/textColorSecondary"
+                                android:textColorHint="@color/textColorSecondary"
+                                android:textSize="@dimen/textsize_16" />
+
+                            <RadioButton
+                                android:id="@+id/nri_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorPrimary"
+                                android:checked="true"
+                                android:tag="No"
+                                android:text="No"
+                                android:textColor="@color/textColorSecondary"
+                                android:textColorHint="@color/textColorSecondary"
+                                android:textSize="@dimen/textsize_16" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/country"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:drawableRight="@drawable/ic_arrow_down_24dp"
+                            android:hint="Country"
+                            android:inputType="textCapSentences"
+                            android:padding="@dimen/dpw5"
+                            android:singleLine="true"
+                            android:tag="Country"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:drawableRight="@drawable/ic_arrow_down_24dp"
+                            android:hint="Select your State"
+                            android:inputType="textCapSentences"
+                            android:padding="@dimen/dpw5"
+                            android:singleLine="true"
+                            android:tag="State"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/district"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:drawableRight="@drawable/ic_arrow_down_24dp"
+                            android:hint="District"
+                            android:inputType="textCapSentences"
+                            android:padding="@dimen/dpw5"
+                            android:singleLine="true"
+                            android:tag="District"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/mandal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:drawableRight="@drawable/ic_arrow_down_24dp"
+                            android:hint="Mandal"
+                            android:inputType="textCapSentences"
+                            android:padding="@dimen/dpw5"
+                            android:singleLine="true"
+                            android:tag="Mandal"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/village"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:drawableRight="@drawable/ic_arrow_down_24dp"
+                            android:hint="Village"
+                            android:inputType="textCapSentences"
+                            android:padding="@dimen/dpw5"
+                            android:singleLine="true"
+                            android:tag="Village Name"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dpw10"
+                        android:layout_marginTop="@dimen/dpw10">
+
+                        <com.v2soft.apsf.shared.Bold
+                            android:id="@+id/save"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dpw32"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/ripple_button"
+                            android:gravity="center"
+                            android:onClick="onSave"
+                            android:paddingLeft="@dimen/dpw20"
+                            android:paddingRight="@dimen/dpw20"
+                            android:text="Save"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textsize_18"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.v2soft.apsf.shared.Regular
+        android:id="@+id/tv_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dpw3"
+        android:text="@string/design_develop"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_12" />
+
+</RelativeLayout>

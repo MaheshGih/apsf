@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edit_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpw15">
+
+                <include layout="@layout/header" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_card"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dpw20"
+                    android:paddingRight="@dimen/dpw20">
+
+                    <com.v2soft.apsf.shared.Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/dpw3"
+                        android:text="Contact"
+                        android:textColor="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_footer"
+        android:layout_below="@+id/ll_header"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transperant"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dpw5"
+                    android:paddingLeft="@dimen/dpw20"
+                    android:paddingRight="@dimen/dpw20"
+                    android:paddingTop="@dimen/dpw10">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:hint="Enter your Name"
+                            android:inputType="textCapSentences"
+                            android:padding="@dimen/dpw6"
+                            android:singleLine="true"
+                            android:tag="Name"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5">
+
+                        <EditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:hint="Enter your Registered Id or Phone number"
+                            android:inputType="textCapSentences"
+                            android:padding="@dimen/dpw6"
+                            android:singleLine="true"
+                            android:tag="Email"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5">
+
+                        <EditText
+                            android:id="@+id/subject"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:hint="Subject"
+                            android:inputType="textCapSentences"
+                            android:padding="@dimen/dpw6"
+                            android:singleLine="true"
+                            android:tag="Subject"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw5">
+
+                        <EditText
+                            android:id="@+id/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transperant"
+                            android:gravity="top|left"
+                            android:hint="Enter your message here"
+                            android:inputType="textMultiLine"
+                            android:minLines="3"
+                            android:padding="@dimen/dpw6"
+                            android:tag="Message"
+                            android:textColor="@color/textColorSecondary"
+                            android:textColorHint="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <com.v2soft.apsf.shared.Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dpw5"
+                        android:gravity="center"
+                        android:text="Please fill all the above fields for getting information from us in a short period of time"
+                        android:textColor="@color/textColorSecondary"
+                        android:textSize="@dimen/textsize_10" />
+
+                    <com.v2soft.apsf.shared.Bold
+                        android:id="@+id/tv_signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dpw32"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/dpw5"
+                        android:layout_marginTop="@dimen/dpw10"
+                        android:background="@drawable/ripple_button"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dpw30"
+                        android:paddingRight="@dimen/dpw30"
+                        android:text="Send"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dpw20"
+                    android:paddingLeft="@dimen/dpw20"
+                    android:paddingRight="@dimen/dpw20">
+
+                    <com.v2soft.apsf.shared.Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/dpw10"
+                        android:gravity="center"
+                        android:shadowColor="#000"
+                        android:shadowRadius="1.0"
+                        android:text="Address for Communication"
+                        android:textColor="@color/textColorSecondary"
+                        android:textSize="@dimen/textsize_18" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorButtonNormal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/dpw5">
+
+                            <com.v2soft.apsf.shared.Regular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center"
+                                android:shadowColor="@color/colorPrimary"
+                                android:shadowRadius="1.0"
+                                android:text="@string/app_name"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/textsize_18" />
+
+                            <com.v2soft.apsf.shared.Regular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="@dimen/dpw5"
+                                android:gravity="center_horizontal"
+                                android:text="@string/text_contact1"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="@dimen/textsize_18" />
+
+                            <com.v2soft.apsf.shared.Regular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:text="@string/text_email"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="@dimen/textsize_16" />
+
+                            <com.v2soft.apsf.shared.Regular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:text="@string/text_tech_mail"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="@dimen/textsize_16" />
+
+                            <com.v2soft.apsf.shared.Regular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_horizontal"
+                                android:text="@string/text_phone"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="@dimen/textsize_16"
+                                android:visibility="gone" />
+
+                            <com.v2soft.apsf.shared.Regular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="@dimen/dpw5"
+                                android:drawableLeft="@drawable/ic_location_24dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/text_address"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/textsize_12" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpw10"
+                        android:orientation="horizontal">
+
+                        <com.v2soft.apsf.shared.Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/dpw10"
+                            android:gravity="center_vertical"
+                            android:text="Click on the image to locate us"
+                            android:textColor="@color/textColorSecondary"
+                            android:textSize="@dimen/textsize_12" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:elevation="@dimen/dpw4">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/maploc"
+                                android:onClick="openLocation" />
+
+                        </android.support.v7.widget.CardView>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <com.v2soft.apsf.shared.Regular
+        android:id="@+id/tv_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dpw3"
+        android:text="@string/design_develop"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textsize_12" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d81b60</color>
+    <color name="colorPrimaryDark">#d81b60</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="centerColor">@color/colorPrimary</color>
+    <color name="endColor">@color/colorPrimary</color>
+    <color name="startColor">@color/colorPrimary</color>
+
+    <color name="album_title">#4c4c4c</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#1c8827</color>
+    <color name="orange">#f74b16</color>
+    <color name="transperant">#00000000</color>
+    <color name="textColor1">#1d265c</color>
+
+    <color name="textColor">#4B5C66</color>
+    <color name="textColorPrimary">#212121</color><!-- materialpalette: primary_text -->
+    <color name="textColorSecondary">#727272</color><!-- materialpalette: secondary_text -->
+    <color name="listDivider">#B6B6B6</color><!-- materialpalette: divider -->
+    <color name="hintBackground">#ADADAD</color><!-- materialpalette: divider -->
+
+    <color name="colorTextIcons">#FFFFFF</color><!-- materialpalette: icons -->
+    <color name="black">#000000</color>
+    <color name="edit_bg">#EEEEEE</color>
+
+    <color name="colorControlNormal">#757575</color>
+    <color name="colorControlActivated">@color/hintBackground</color>
+    <color name="colorControlHighlight">#FF5722</color>
+    <color name="colorSwitchThumbNormal">#BDBDBD</color>
+    <color name="colorButtonNormal">#BDBDBD</color>
+    <color name="colorEdgeEffect">#FF4081</color>
+
+    <color name="switch_on">@color/colorAccent</color>
+
+    <color name="pressed_color">#FF5722</color>
+    <color name="selected_color">#9C27B0</color>
+    <color name="focused_color">#ff0073</color>
+
+    <color name="red">#FF0000</color>
+
+</resources>

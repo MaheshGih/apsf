@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_social"
+        android:layout_alignParentTop="true"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dpw40"
+                android:background="@drawable/bottom_round"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/world" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dpw70"
+                    android:layout_height="@dimen/dpw70"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:orientation="vertical"
+            android:padding="@dimen/dpw10">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transperant"
+                    android:drawableLeft="@drawable/ic_user_24dp"
+                    android:drawablePadding="@dimen/dpw5"
+                    android:hint="Enter your Registered id or Phone number"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="@dimen/dpw5"
+                    android:singleLine="true"
+                    android:textColor="@color/textColorSecondary"
+                    android:textColorHint="@color/textColorSecondary"
+                    android:textSize="@dimen/textsize_16" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dpw10">
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transperant"
+                    android:drawableLeft="@drawable/ic_pass_24dp"
+                    android:drawablePadding="@dimen/dpw5"
+                    android:hint="Password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/dpw5"
+                    android:textColor="@color/textColorSecondary"
+                    android:textColorHint="@color/textColorSecondary"
+                    android:textSize="@dimen/textsize_16" />
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dpw5">
+
+                <CheckBox
+                    android:id="@+id/check_remember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:buttonTint="@color/colorPrimary"
+                    android:checked="false"
+                    android:padding="@dimen/dpw5"
+                    android:text="Remember Me"
+                    android:textColor="@color/textColorSecondary"
+                    android:textSize="@dimen/textsize_16"
+                    android:visibility="invisible" />
+
+                <com.v2soft.apsf.shared.Regular
+                    android:id="@+id/text_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="right|end"
+                    android:onClick="forgotPassword"
+                    android:padding="@dimen/dpw5"
+                    android:text="Generate New Password"
+                    android:textColor="@color/textColorSecondary"
+                    android:textSize="@dimen/textsize_16" />
+            </RelativeLayout>
+
+            <com.v2soft.apsf.shared.Regular
+                android:id="@+id/text_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/textColorSecondary"
+                android:textSize="@dimen/textsize_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dpw20"
+                android:layout_marginRight="@dimen/dpw20"
+                android:layout_marginTop="@dimen/dpw20"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.v2soft.apsf.shared.Bold
+                    android:id="@+id/tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dpw32"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ripple_button"
+                    android:gravity="center"
+                    android:onClick="loginAction"
+                    android:paddingLeft="@dimen/dpw35"
+                    android:paddingRight="@dimen/dpw35"
+                    android:text="Login"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_18" />
+
+                <com.v2soft.apsf.shared.Bold
+                    android:id="@+id/tv_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dpw32"
+                    android:layout_marginLeft="@dimen/dpw10"
+                    android:background="@drawable/ripple_button"
+                    android:gravity="center"
+                    android:onClick="signUpAction"
+                    android:paddingLeft="@dimen/dpw25"
+                    android:paddingRight="@dimen/dpw25"
+                    android:text="Membership"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_18" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_footer"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.v2soft.apsf.shared.Regular
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dpw32"
+            android:layout_marginLeft="@dimen/dpw10"
+            android:gravity="center_vertical"
+            android:text="Login With : "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/textsize_20" />
+
+        <ImageView
+            android:id="@+id/image_fb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/fb" />
+
+        <ImageView
+            android:id="@+id/image_gp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/dpw5"
+            android:background="@drawable/google" />
+
+        <ImageView
+            android:id="@+id/youtube"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/dpw5"
+            android:background="@drawable/you_tube"
+            android:onClick="openSubscription" />
+
+    </LinearLayout>
+
+    <com.v2soft.apsf.shared.Regular
+        android:id="@+id/tv_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dpw3"
+        android:text="@string/design_develop"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textsize_12" />
+</RelativeLayout>

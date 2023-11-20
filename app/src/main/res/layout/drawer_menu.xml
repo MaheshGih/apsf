@@ -1,0 +1,235 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".fragment.DrawerMenu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.v2soft.apsf.shared.Regular
+                    android:id="@+id/tv_app_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="@dimen/dph10"
+                    android:gravity="center"
+                    android:padding="@dimen/dpw10"
+                    android:text="Settings"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_20" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dpw10"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="@dimen/dpw5">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_settings_white_24dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.v2soft.apsf.shared.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="@dimen/dpw100"
+                    android:layout_height="@dimen/dpw100"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/avathar"
+                    app:border_color="@color/white"
+                    app:border_width="@dimen/dpw2" />
+
+            </LinearLayout>
+
+            <com.v2soft.apsf.shared.Regular
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/dpw10"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_22" />
+
+            <com.v2soft.apsf.shared.Regular
+                android:id="@+id/tv_profession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dpw10"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_18" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground">
+
+                <com.v2soft.apsf.shared.Regular
+                    android:id="@+id/tv_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:drawablePadding="@dimen/dpw10"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dpw10"
+                    android:text="My Profile"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_18" />
+
+                <com.v2soft.apsf.shared.Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dpw10"
+                    android:padding="@dimen/dpw10"
+                    android:text="4"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_14"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <com.v2soft.apsf.shared.Regular
+                android:id="@+id/tv_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawablePadding="@dimen/dpw10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dpw10"
+                android:text="Change Password"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_18" />
+
+            <com.v2soft.apsf.shared.Regular
+                android:id="@+id/tv_forgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawablePadding="@dimen/dpw10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dpw10"
+                android:text="Forgot Password"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_18"
+                android:visibility="gone" />
+
+            <com.v2soft.apsf.shared.Regular
+                android:id="@+id/tv_reference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawablePadding="@dimen/dpw10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dpw10"
+                android:text="Reference Form"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_18" />
+
+            <com.v2soft.apsf.shared.Regular
+                android:id="@+id/tv_invite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawablePadding="@dimen/dpw10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dpw10"
+                android:text="Invite People"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_18" />
+
+            <com.v2soft.apsf.shared.Regular
+                android:id="@+id/tv_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawablePadding="@dimen/dpw10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dpw10"
+                android:text="About US"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_18"
+                android:visibility="gone" />
+
+            <com.v2soft.apsf.shared.Regular
+                android:id="@+id/tv_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawablePadding="@dimen/dpw10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dpw10"
+                android:text="Contact US"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_18" />
+
+            <com.v2soft.apsf.shared.Regular
+                android:id="@+id/tv_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawablePadding="@dimen/dpw10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dpw10"
+                android:text="Report a Problem"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_18" />
+
+            <com.v2soft.apsf.shared.Regular
+                android:id="@+id/tv_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawablePadding="@dimen/dpw10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dpw10"
+                android:text="Logout"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_18" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

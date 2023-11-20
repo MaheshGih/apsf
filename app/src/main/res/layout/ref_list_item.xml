@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:elevation="@dimen/dpw6"
+        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpw120"
+                    android:clickable="true"
+                    android:scaleType="fitXY" />
+
+                <com.v2soft.apsf.shared.Bold
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/thumbnail"
+                    android:paddingLeft="@dimen/dpw5"
+                    android:paddingRight="@dimen/dpw5"
+                    android:paddingTop="@dimen/dpw5"
+                    android:textColor="@color/album_title"
+                    android:textSize="@dimen/album_title" />
+
+                <com.v2soft.apsf.shared.Regular
+                    android:id="@+id/count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:paddingBottom="@dimen/songs_count_padding_bottom"
+                    android:paddingLeft="@dimen/songs_count_padding_bottom"
+                    android:paddingRight="@dimen/songs_count_padding_bottom"
+                    android:textSize="@dimen/songs_count" />
+
+                <com.v2soft.apsf.shared.Regular
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/count"
+                    android:paddingBottom="@dimen/songs_count_padding_bottom"
+                    android:paddingLeft="@dimen/songs_count_padding_bottom"
+                    android:paddingRight="@dimen/songs_count_padding_bottom"
+                    android:textSize="@dimen/songs_count" />
+
+                <LinearLayout
+                    android:id="@+id/ll_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/location"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/songs_count_padding_bottom"
+                    android:paddingLeft="@dimen/songs_count_padding_bottom"
+                    android:paddingRight="@dimen/songs_count_padding_bottom">
+
+                    <com.v2soft.apsf.shared.Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status : "
+                        android:textSize="@dimen/songs_count" />
+
+                    <com.v2soft.apsf.shared.Regular
+                        android:id="@+id/phno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/songs_count" />
+                </LinearLayout>
+
+                <com.v2soft.apsf.shared.Regular
+                    android:id="@+id/emailId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_status"
+                    android:paddingBottom="@dimen/songs_count_padding_bottom"
+                    android:paddingLeft="@dimen/songs_count_padding_bottom"
+                    android:paddingRight="@dimen/songs_count_padding_bottom"
+                    android:textSize="@dimen/songs_count" />
+
+            </RelativeLayout>
+
+            <com.v2soft.apsf.shared.Bold
+                android:id="@+id/tv_book"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dpw32"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_button"
+                android:gravity="center"
+                android:text="BOOK"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_18"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

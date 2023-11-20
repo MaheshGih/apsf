@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="@dimen/dpw50"
+        android:layout_height="@dimen/dpw50"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/dpw5"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:gravity="center">
+
+        <com.v2soft.apsf.shared.Bold
+            android:id="@+id/t"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_circle"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_24" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ll_info"
+            android:layout_toStartOf="@+id/ll_info"
+            android:orientation="vertical">
+
+            <com.v2soft.apsf.shared.Bold
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_20" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.v2soft.apsf.shared.Regular
+                    android:id="@+id/regid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dpw5"
+                    android:gravity="center_vertical"
+                    android:text="Small Text"
+                    android:textSize="@dimen/textsize_14"
+                    android:tint="@color/colorPrimary" />
+
+                <com.v2soft.apsf.shared.Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dpw5"
+                    android:layout_toLeftOf="@+id/status"
+                    android:gravity="center_vertical"
+                    android:text="Status : "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_14" />
+
+                <com.v2soft.apsf.shared.Bold
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dpw5"
+                    android:gravity="center_vertical"
+                    android:text="1"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/dpw32"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_icon"
+            android:layout_width="@dimen/dpw50"
+            android:layout_height="@dimen/dpw50"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dpw5"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/phno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dpw32" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="@dimen/dpw50"
+            android:layout_height="@dimen/dpw50"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dpw5"
+            android:layout_toLeftOf="@+id/ll_icon"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dpw32" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dpw0.5"
+            android:layout_alignParentBottom="true"
+            android:background="@color/listDivider" />
+    </RelativeLayout>
+</LinearLayout>
